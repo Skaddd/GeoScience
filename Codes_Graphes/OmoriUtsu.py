@@ -127,9 +127,9 @@ def RegressionOU_foreshock(c, nt, ms_max_mag, magmax):
                 
 if __name__ == '__main__':
 
-    df = pd.read_csv('Data/CDSA_EssaimSaintes_2004-2005.txt', sep="\s+")
+    df = pd.read_csv('../data_SNat/CDSA_SeulementEssaimSaintes_2004-2005.txt', sep="\s+")
 
     # 1 jour = 86 400 sec
     gap = 3600 * 24
     # Calcul de p et K
-    GraphOmoriUtsu(df, gap, 0, 0, 0)
+    GraphOmoriUtsu(df, gap, 1, 1, 0)
